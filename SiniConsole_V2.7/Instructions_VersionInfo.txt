@@ -1,0 +1,43 @@
+How it works:
+	to load the app right click on the .ps1 file and run it with powershell,
+	to close the app just click the X on the right top corner.
+
+
+Prerequisits:
+	ActiveDirectiry and SHOWUI modules.
+	*To import AD module you have to install RSAT
+	(PS C:\Users\elib> import-module activedirectory)
+	(PS C:\Users\elib> Install-Module showui)
+	
+Debugging:
+	get the script out of the "PowerShell.exe -windowstyle hidden { }", then you'll be able to view the console.
+
+Known Issues:
+	 1. Sometimes the app is "not responding",
+		no need to reload, it appears just for a second, probobly a fucked up M$ integration.
+
+V2.7 - 
+	1. Redesigned the console to appear with tabs.
+	2. "Copy Module" was integrated in tab 2.
+	3. "Get User Groups" button was added.
+	4. "Get Use Info" button was added.
+
+V2.5 - 
+	1. The name was changed to Sini Console.
+	2. CopyModule V1.0 was added as an extension to Sini Console.
+	3. "Copy Module" button was added.
+
+V2.4 - 
+	1. InfoTextBox added.
+
+
+V2.3 - 
+	1. Added colors to textboxes and fonts.
+	2. Disabled the asterisk as user input, (added it to code).
+	3. Added a second button that retrieves the groups that the user is a member of (that button holds a function within).
+	4. Clear Screen button was added.
+	5. Get Computer Info button was added. (requires presice value)
+	6. Get Process button was added. (Requires presice value)
+
+V2.1 - This is a powershell form that is used to retrieve AD listed info about the user that was entered in to the textbox.
+	   Shell window is set to hidden.
